@@ -1,0 +1,44 @@
+import renderRegisterForm from "../RegisterForm/renderRegisterForm.js";
+import renderLoginForm from "../LoginForm/renderLoginForm.js";
+
+// 1. import: renderLoginForm, renderRegisterForm
+// W funkcji:
+// 2. Wybranie i czyszczenie sekcji content
+// 3. Stwórz element <h2> i nadaj mu textContent 'Log in or sign up'
+// 4. Stwórz element <p> i nadaj mu textContent "Our authentication mechanism uses Firebase Auth and is 100% secure."
+// 5. Stwórz element <label> i nadaj mu textContent 'Log in:'
+// 6. Wywołaj funckje renderLoginForm i zapisz wynik do zmiennej (const form = renderLoginForm())
+// 7. Stwórz element <button>, nadaj mu id 'register-button' i textContent 'register'
+// 8. Do sekcji content podpiąć: h2, p, label, form, button
+// 9. Na buttona register nadajecie event listener (w środku: czyścicie skecje content i wywołujecie renderRegisterForm)
+
+export default function () {
+const contentContainer = document.querySelector('.content')
+contentContainer.innerHTML = '';
+
+const h2 = document.createElement('h2');
+h2.setAttribute ('id', 'h2-login-page')
+h2.textContent = 'Log in or sign up';
+
+const p = document.createElement('p');
+p.setAttribute ('id', 'p-login-page')
+p.textContent = 'Our authentication mechanism uses Firebase Auth and is 100% secure.';
+
+const label = document.createElement('label');
+label.setAttribute ('id', 'label-login-page')
+label.textContent = 'Log in:'
+
+const form = renderLoginForm();
+
+const button = document.createElement('button');
+button.setAttribute('id','register-button');
+button.textContent = 'Register';
+
+contentContainer.appendChild(h2);
+contentContainer.appendChild(p);
+contentContainer.appendChild(label);
+contentContainer.appendChild(form);
+contentContainer.appendChild(button);
+
+button.addEventListener('click',renderRegisterForm)
+};

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  color: #E5DCC5;
+}
+body {
+  background-color: #2D2D2A;
+}
+
+.main-header {
+  background-color: #2D2D2A;
+  border-bottom: 2px solid #848FA5;
+  min-height: 70px;
+}
+.main-header h1 {
+  display: inline;
+  margin: 15px;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  font-weight: bold;
+}
+.main-nav {
+  display: flex;
+  margin-left: 50%;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin-right: 50px;
+  font-size: larger;
+  font-weight: 800;
+}
+
+a:link,
+a:visited {
+  color: #E5DCC5;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  background-color: #C14953;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  height: 20px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.content {
+  margin-bottom: auto;
+  margin-top: 10%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+fieldset {
+  border: none;
+}
+
+
+/* RegisterForm */
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+#register-email-input,
+#register-first-input-password,
+#register-second-input-password,
+#input-email,
+#input-password
+ {
+  padding: 10px 20px 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.register-submit-button, 
+#register-button, 
+#login-submit-button,
+.todo-form-submit-button {
+  padding: 5px 10px 5px 10px;
+  background-color: #C14953;
+  color: #2D2D2A;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-top: 5px;
+  }
+
+  .register-submit-button:hover, 
+  #register-button:hover,
+  #login-submit-button:hover {
+    background-color: #4c4c47;
+  }
+
+  /*LoginForm*/
+
+  #login-submit-button {
+    padding: 5px 15px 5px 15px;
+    background-color: #C14953;
+    color: #2D2D2A;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 5px;
+    }
+
+    #h2-login-page,
+    #p-login-page,
+    #label-login-page {
+      padding: 5px 15px 5px 15px;
+      border: 15px
+    }
+
+    #register-button{
+      margin-top: 7px;
+    }
+
+    /*HomePage*/
+
+    #p-home-page {
+      font-weight: bold;
+      }
+
+      /*TodoForm*/
